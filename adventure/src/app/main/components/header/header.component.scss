@@ -1,0 +1,30 @@
+*{
+    color: whitesmoke;
+}
+
+.title1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title2{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line {
+    border-bottom: 5px solid whitesmoke;
+    margin-top: 5px;
+    width: 65%;
+    margin-left: 16%;
+}
+
+.subtitle{
+    font-size: 0.8em;
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 50%;
+}
