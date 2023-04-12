@@ -1,0 +1,12 @@
+<mat-paginator
+    [length]="arrayOfCards.length"
+    [pageSize]="pageSize"
+    [pageIndex] = "page - 1"
+    (page)="page = $event.pageIndex + 1">
+</mat-paginator>
+
+<div class="card-list-container">
+    <app-card 
+    *ngFor="let card of arrayOfCards | slice: (page - 1) * pageSize : (page - 1) * pageSize + pageSize" 
+    [card]="card" (cardEmitter)="setReceivedCard($event)"></app-card>    
+</div>

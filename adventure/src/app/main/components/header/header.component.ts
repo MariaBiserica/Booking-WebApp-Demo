@@ -1,24 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CardService } from '../../services/card.service';
+import { Card } from '../../models/card.model';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
 
   title1: string = 'Discover the colorful world';
   title2: string = 'NEW ADVENTURE';
 
-  constructor() { }
-
-  ngOnInit() {
-    //document.body.className = "selector-image";
+  constructor(private cardService: CardService) {
+    this.cardService.cardSubject.subscribe((card: Card) => {
+      this.title2 = card.title;
+      console.log('got card from service: ', card);
+    });
   }
 
-  ngOnDestroy(){
-    document.body.className="";
-  }
+  ngOnInit(): void {}
 
   discover() {
     console.log('discover clicked');

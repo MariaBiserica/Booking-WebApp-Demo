@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.container-header {
   max-width: 900px;
   margin: 30px auto;
   overflow: auto;
@@ -19,6 +19,27 @@ body {
   padding: 30px;
   border-radius: 5px;
   background-image: url(/assets/images/poza3.jpg);
+}
+
+.container-dashboard{
+  max-width: 900px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 400px;
+  border: 1px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.container-cards {
+  max-width: 900px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 400px;
+  border: 1px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgb(214, 212, 212);
 }
 
 .btn {

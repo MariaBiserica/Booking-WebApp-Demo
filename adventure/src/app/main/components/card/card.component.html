@@ -1,0 +1,6 @@
+<div class="card-container"> 
+    <img *ngIf="displayImage" src={{card.image}}>
+    <h3>{{card.title}}</h3>
+    <p>{{card.description}}</p>
+    <app-button color="rgb(85, 255, 47)" text="VISIT NOW" (btnClick)="emitCard()"></app-button>
+</div>
