@@ -1,1 +1,47 @@
-<p>Search & Book all of our destinations</p>
+<div class="container-dashboard">
+    <div class="title1">
+        <h5>{{title1}}</h5>   
+    </div>
+    <input [(ngModel)]="searchTerm" type="text" placeholder="Select your city" class="search-bar">
+    <app-card *ngFor="let city of filteredCities" [card]="city" (cardEmitter)="setReceivedCard($event)"
+        style= "display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;">{{city}}
+    </app-card>
+    <div *ngIf="!searchSuccessful" style="color: red">
+        <p *ngIf="searchTerm">No results found.</p>
+      </div>
+    <div class="title2">
+        <h3>{{title2}}</h3>
+    </div>
+    <div class="horizontal-line"></div>
+    
+    <div class="row"> 
+        <div class="container"> 
+            <h3 style="color: rgb(85, 255, 47);">TRAVEL</h3>
+            <h5>Article title</h5>
+            <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+        </div>
+        <div class="container"> 
+            <h3 style="color: rgb(85, 255, 47);">TRAVEL ARRANGEMENTS</h3>
+            <h5>Article title</h5>
+            <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+        </div>
+    </div>
+    <br>
+    <div class="row"> 
+        <div class="container"> 
+            <h3 style="color: rgb(85, 255, 47);">OUR PROFESSIONAL GUIDE</h3>
+            <h5>Article title</h5>
+            <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+        </div>
+        <div class="container"> 
+            <h3 style="color: rgb(85, 255, 47);">ACTIVITIES</h3>
+            <h5>Article title</h5>
+            <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+        </div>
+    </div>
+</div>

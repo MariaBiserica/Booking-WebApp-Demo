@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CardService } from '../../services/card.service';
 import { Card } from '../../models/card.model';
-import {CARDS} from '../../mock-cards';
+import { CARDS } from '../../mock-cards';
 
 @Component({
   selector: 'app-dashboard2',
@@ -10,6 +10,7 @@ import {CARDS} from '../../mock-cards';
 })
 export class Dashboard2Component implements OnInit {
 
+  title: string = "MOST POPULAR";
   receivedCard!: Card;
   arrayOfCards: Card[] = CARDS;
   pageSize = 6;

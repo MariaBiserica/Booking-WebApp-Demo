@@ -1,29 +1,22 @@
-.card-list-container {
+.title{
+    color: rgb(85, 255, 47);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line {
+    border-bottom: 2px solid rgb(207, 204, 204);
+    margin-top: 5px;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+
+.container-card-list {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-}
-
-.demo-toggles {
-    display: flex;
-    flex-direction: column;
-}
-  
-.demo-toggles * {
-    margin-bottom: 16px;
-}
-
-.demo-options {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-}
-
-.demo-data * {
-    margin: 16px 0;
-}
-
-.demo-paginator {
-    width: 600px;
 }

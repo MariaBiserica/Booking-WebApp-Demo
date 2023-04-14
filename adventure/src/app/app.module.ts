@@ -11,6 +11,9 @@ import { CardComponent } from './main/components/card/card.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { FormsModule } from '@angular/forms';
+import { ParentPageComponent } from './main/components/parent-page/parent-page.component';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     Dashboard1Component,
     ButtonComponent,
     Dashboard2Component,
-    CardComponent
+    CardComponent,
+    ParentPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule // pt [(ngModel)]
   ],
   providers: [],
   bootstrap: [AppComponent]
