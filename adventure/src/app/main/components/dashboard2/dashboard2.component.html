@@ -1,18 +1,23 @@
 <div class="container-cards">
-    <mat-paginator
+    <!-- <mat-paginator
         [length]="arrayOfCards.length"
         [pageSize]="pageSize"
         [pageIndex] = "page - 1"
         (page)="page = $event.pageIndex + 1"
         [hidePageSize]="true">
-    </mat-paginator>
-    <div class="title">
+    </mat-paginator> -->
+
+    <app-button color="grey" text=">" style="float: right;" (btnClick)="nextPage()"></app-button>
+    <app-button color="grey" text="<" style="float: right;" (btnClick)="prevPage()"></app-button>
+    
+    <div class="title" style="margin-top: 40px;">
         <h3>{{title}}</h3>
     </div>
     <div class="horizontal-line"></div>
     <div class="container-card-list">
-        <app-card 
-        *ngFor="let card of arrayOfCards | slice: (page - 1) * pageSize : (page - 1) * pageSize + pageSize" 
-        [card]="card" (cardEmitter)="setReceivedCard($event)"></app-card>    
+        <!-- *ngFor="let card of arrayOfCards | slice: (page - 1) * pageSize : (page - 1) * pageSize + pageSize"  -->
+        <app-card
+        *ngFor="let card of arrayOfCards | slice: startIndex : endIndex;" 
+        [card]="card" (cardEmitter)="setReceivedCard($event)"></app-card> 
     </div>
 </div>
