@@ -26,7 +26,7 @@ import { ParentPageComponent } from './main/components/parent-page/parent-page.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule // pt [(ngModel)]
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

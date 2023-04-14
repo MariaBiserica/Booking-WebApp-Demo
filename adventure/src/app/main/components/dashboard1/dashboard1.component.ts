@@ -12,7 +12,6 @@ export class Dashboard1Component {
 
   title1: string = "Search & Book all our destinations";
   title2: string = "OUR SERVICES";
-
   receivedCard!: Card;
   arrayOfCards: Card[] = CARDS;
   searchTerm: string = "";

@@ -1,18 +1,19 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Card } from '../models/card.model';
 import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CardService {
+export class CardService implements OnInit{
 
-  private savedCard!: Card;
-    cardSubject = new Subject<Card>();
+  cardSubject = new Subject<Card>();
 
   constructor() {}
 
+  ngOnInit(): void {}
+
   emitCardTitle(card: Card){
-      this.cardSubject.next(card); // trimitem datele catre toti cei care sunt abonati la acest subject
+      this.cardSubject.next(card);
   }
 }

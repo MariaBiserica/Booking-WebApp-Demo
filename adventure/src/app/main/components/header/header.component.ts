@@ -24,4 +24,5 @@ export class HeaderComponent implements OnInit{
   discover() {
     console.log('discover clicked');
   }
+  
 }

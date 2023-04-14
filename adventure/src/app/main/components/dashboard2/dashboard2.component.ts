@@ -13,11 +13,10 @@ export class Dashboard2Component implements OnInit {
   title: string = "MOST POPULAR";
   receivedCard!: Card;
   arrayOfCards: Card[] = CARDS;
-  
-  pageSize = 6;
-  page = 1;
-  startIndex = (this.page - 1) * this.pageSize;
-  endIndex = this.startIndex + this.pageSize;
+  pageSize: number = 6;
+  page: number = 1;
+  startIndex: number = (this.page - 1) * this.pageSize;
+  endIndex: number = this.startIndex + this.pageSize;
 
   constructor(private cardService: CardService) {
     this.cardService.cardSubject.subscribe((card: Card) => {

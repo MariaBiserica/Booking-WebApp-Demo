@@ -85,27 +85,6 @@ export const CARDS: Card[] = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 },
 {
-    title: 'Stockholm',
-    image:
-    'https://i.pinimg.com/564x/5a/06/42/5a0642831053c1c0fcb62b6110848548.jpg',
-    description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-},
-{
-    title: 'Sofia',
-    image:
-    'https://i.pinimg.com/564x/00/9b/a0/009ba08de715e5b8798a66e0ca7f7440.jpg',
-    description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-},
-{
-    title: 'London',
-    image:
-    'https://i.pinimg.com/564x/45/49/da/4549da99a56dcd2d23a3223cb2531606.jpg',
-    description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-},
-{
     title: 'Quebec',
     image:
     'https://i.pinimg.com/736x/7e/f1/22/7ef12207ac9db63dcea8d26bfd5cc0f1.jpg',
@@ -123,6 +102,27 @@ export const CARDS: Card[] = [
     title: 'Budapest',
     image:
     'https://i.pinimg.com/736x/a0/28/4a/a0284af2a0342c9bcdb23d0090de48d9.jpg',
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    title: 'Stockholm',
+    image:
+    'https://i.pinimg.com/564x/5a/06/42/5a0642831053c1c0fcb62b6110848548.jpg',
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    title: 'Sofia',
+    image:
+    'https://i.pinimg.com/564x/00/9b/a0/009ba08de715e5b8798a66e0ca7f7440.jpg',
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    title: 'London',
+    image:
+    'https://i.pinimg.com/564x/45/49/da/4549da99a56dcd2d23a3223cb2531606.jpg',
     description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 },
