@@ -18,7 +18,7 @@ body {
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
-  background-image: url(/assets/images/poza3.jpg);
+  background-image: url(/assets/images/poza4.jpg);
 }
 
 .container-dashboard{
@@ -44,7 +44,7 @@ body {
 
 .btn {
   display: inline-block;
-  background: #000;
+  background: rgb(85, 255, 47);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -62,6 +62,7 @@ body {
 
 .btn:active {
   transform: scale(0.98);
+  background-color: rgb(160, 255, 138);
 }
 
 .btn-block {

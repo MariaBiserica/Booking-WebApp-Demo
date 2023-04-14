@@ -9,7 +9,6 @@ import ButtonComponent from './main/components/button/button.component';
 import { Dashboard2Component } from './main/components/dashboard2/dashboard2.component';
 import { CardComponent } from './main/components/card/card.component';
 
-//import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { ParentPageComponent } from './main/components/parent-page/parent-page.component';
 
@@ -27,7 +26,6 @@ import { ParentPageComponent } from './main/components/parent-page/parent-page.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //MatPaginatorModule,
     FormsModule // pt [(ngModel)]
   ],
   providers: [],
