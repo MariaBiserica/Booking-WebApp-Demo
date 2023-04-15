@@ -11,7 +11,7 @@ Requirements:
 
 - Search by a city name
 
-- Using decorators @Input() and @Output() and his [(ngModel)]
+- Using decorators @Input(), @Output() and [(ngModel)]
 
 - Using *ngFor (to display cards)
 
